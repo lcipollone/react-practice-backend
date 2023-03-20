@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>React course</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- TODO -->
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+  <script>
+      $.ajax({
+          url: '/directories',
+          data: JSON.stringify({ parentId: 1, name: 'test' }),
+          type: 'POST',
+          contentType: 'application/json'
+      });
+  </script>
+</body>
+</html>

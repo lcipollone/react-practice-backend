@@ -1,0 +1,19 @@
+GET     /                   Returns index.html
+
+GET     /directories
+Returns directories list
+POST    /directories
+Create new directory and return it with id. You must specify parentId and name fields
+PUT     /directories/:id
+Update directory
+DELETE  /directories/:id
+Delete directory
+
+GET     /notices
+Return notices list
+POST    /notices
+Create new notice and return it with id and position. You must specify directoryId, title, description and tags fields
+PUT     /notices/:id
+Update notice (can be user for changing position)
+DELETE  /notices/:id
+Delete notice
